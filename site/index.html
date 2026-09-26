@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bar Leśny 2.0 · Łeba — domowe obiady wśród sosen</title>
-<meta name="description" content="Bar Leśny 2.0 w Łebie, ul. Turystyczna 3 (Camping Morski nr 21). Domowe obiady, polska i regionalna kuchnia, pierogi. Godziny otwarcia, menu, dojazd.">
+<title>Bar Leśny 2.0 · Łeba — kuchnia polska i regionalna wśród sosen</title>
+<meta name="description" content="Bar Leśny 2.0 w Łebie, ul. Turystyczna 3 (Camping Morski nr 21). Pełne menu z cenami, godziny otwarcia, dojazd. Pierogi, sandacz z sosem kurkowym, leśna wątróbka szefa.">
 <meta property="og:title" content="Bar Leśny 2.0 · Łeba">
-<meta property="og:description" content="Domowe obiady wśród sosen, kilka kroków od plaży. Turystyczna 3, Łeba.">
-<meta property="og:image" content="img/lokal.jpg">
+<meta property="og:description" content="Kuchnia polska i regionalna wśród sosen, kilka kroków od plaży. Menu z cenami, godziny, dojazd.">
+<meta property="og:image" content="img/front.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --forest:#1f3a2c; --forest-2:#2d5240; --moss:#6f8f4e; --pine:#0f241a;
-  --sand:#f4ead7; --sand-2:#eadbbd; --bark:#7a4b2a; --amber:#e08a2c; --lamp:#f26b2a;
+  --forest:#1f3a2c; --forest-2:#2d5240; --moss:#6f8f4e; --pine:#0f241a; --lime:#c8d64a;
+  --sand:#f4ead7; --sand-2:#eadbbd; --bark:#7a4b2a; --amber:#e08a2c;
   --ink:#1c1a17; --muted:#6b645a; --card:#fffaf0;
   --r:18px;
 }
@@ -26,52 +26,49 @@ a{color:inherit}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0}
 .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
 
-/* nav */
 nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;padding:14px 0}
-nav.solid{background:rgba(15,36,26,.92);backdrop-filter:blur(8px);padding:8px 0;box-shadow:0 4px 20px #0003}
+nav.solid{background:rgba(15,36,26,.93);backdrop-filter:blur(8px);padding:8px 0;box-shadow:0 4px 20px #0003}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{display:flex;align-items:center;gap:10px;color:var(--sand);text-decoration:none;font-family:Fraunces,serif;font-weight:700;font-size:1.25rem}
 .logo svg{width:30px;height:30px}
-.logo small{font-family:Caveat,cursive;color:var(--amber);font-size:1.25rem;margin-left:2px}
+.logo small{font-family:Caveat,cursive;color:var(--lime);font-size:1.25rem;margin-left:2px}
 nav ul{list-style:none;display:flex;gap:4px;margin:0;padding:0}
 nav ul a{color:var(--sand);text-decoration:none;font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:99px;transition:.2s}
 nav ul a:hover{background:#ffffff1a}
 .burger{display:none;background:none;border:0;color:var(--sand);font-size:1.6rem;cursor:pointer}
-@media(max-width:760px){
+@media(max-width:820px){
   .burger{display:block}
   nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--pine);padding:10px 22px 18px;display:none}
   nav ul.open{display:flex}
-  nav{background:rgba(15,36,26,.92)}
+  nav{background:rgba(15,36,26,.93)}
 }
 
-/* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--sand);overflow:hidden;
-  background:linear-gradient(180deg,#0f241acc 0%,#0f241a55 40%,#0f241aee 100%),url(img/lokal.jpg) center 40%/cover}
-.hero .trees{position:absolute;inset:auto 0 0 0;height:160px;pointer-events:none}
+  background:linear-gradient(180deg,#0f241acc 0%,#0f241a33 38%,#0f241af0 100%),url(img/front.jpg) center 35%/cover}
+.hero .trees{position:absolute;inset:auto 0 0 0;height:160px;width:100%;pointer-events:none}
 .hero .wrap{position:relative;padding-bottom:150px;padding-top:120px;width:100%}
-.kicker{font-family:Caveat,cursive;font-size:1.8rem;color:var(--amber)}
+.kicker{font-family:Caveat,cursive;font-size:1.8rem;color:var(--lime)}
 .hero h1{font-size:clamp(3rem,9vw,6.5rem);font-weight:900;letter-spacing:-.02em}
 .hero h1 span{color:var(--amber)}
-.hero p.lead{font-size:1.2rem;max-width:560px;opacity:.92;margin:14px 0 26px}
+.hero p.lead{font-size:1.2rem;max-width:580px;opacity:.93;margin:14px 0 26px}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:99px;font-weight:600;text-decoration:none;transition:.2s}
 .btn.primary{background:var(--amber);color:var(--pine)}
 .btn.primary:hover{background:#f19c40;transform:translateY(-2px)}
 .btn.ghost{border:1.5px solid #f4ead799;color:var(--sand)}
 .btn.ghost:hover{background:#ffffff14}
-.status{display:inline-flex;align-items:center;gap:8px;background:#0f241acc;border:1px solid #ffffff22;border-radius:99px;padding:6px 14px;font-size:.9rem;margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#0f241acc;border:1px solid #ffffff22;border-radius:99px;padding:6px 14px;font-size:.9rem}
+.chip b{color:var(--lime)}
 .dot{width:10px;height:10px;border-radius:50%;background:#999}
 .dot.open{background:#5fd068;box-shadow:0 0 0 4px #5fd06833}
 .dot.closed{background:#e2574c}
-.dot.off{background:#d9a441}
 
-/* sections */
 section{padding:96px 0}
 .eyebrow{font-family:Caveat,cursive;color:var(--bark);font-size:1.6rem}
 h2{font-size:clamp(2.1rem,5vw,3.2rem);color:var(--forest);margin-bottom:14px}
-.sub{color:var(--muted);max-width:620px}
+.sub{color:var(--muted);max-width:640px}
 
-/* o nas */
 .about{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .feats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
 .feat{background:var(--card);border-radius:var(--r);padding:18px;box-shadow:0 1px 0 #0000000d,0 8px 24px -12px #3a2a1a33}
@@ -80,63 +77,87 @@ h2{font-size:clamp(2.1rem,5vw,3.2rem);color:var(--forest);margin-bottom:14px}
 .feat span{color:var(--muted);font-size:.93rem}
 .photo-stack{position:relative}
 .photo-stack img{border-radius:var(--r);box-shadow:0 30px 60px -25px #1f3a2c88}
-.photo-stack img.b{position:absolute;width:55%;right:-18px;bottom:-40px;border:6px solid var(--sand);transform:rotate(3deg)}
-.photo-stack .note{position:absolute;left:-14px;top:-18px;background:var(--amber);color:var(--pine);font-family:Caveat,cursive;font-size:1.5rem;padding:4px 16px;border-radius:10px;transform:rotate(-4deg)}
+.photo-stack img.b{position:absolute;width:52%;right:-18px;bottom:-44px;border:6px solid var(--sand);transform:rotate(3deg)}
+.photo-stack .note{position:absolute;left:-14px;top:-18px;background:var(--amber);color:var(--pine);font-family:Caveat,cursive;font-size:1.5rem;padding:4px 16px;border-radius:10px;transform:rotate(-4deg);z-index:2}
 @media(max-width:860px){.about{grid-template-columns:1fr}.photo-stack{margin:0 10px 50px}}
 
-/* menu */
-#menu{background:var(--forest);color:var(--sand);position:relative}
+#menu{background:var(--forest);color:var(--sand)}
 #menu h2{color:var(--sand)}
-#menu .eyebrow{color:var(--amber)}
+#menu .eyebrow{color:var(--lime)}
 #menu .sub{color:#e8dcc4cc}
-.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 26px}
+.daily{display:flex;gap:16px;align-items:center;background:linear-gradient(135deg,#e08a2c,#f0a64a);color:var(--pine);border-radius:18px;padding:16px 22px;margin:28px 0 8px;box-shadow:0 14px 30px -18px #000}
+.daily .big{font-family:Fraunces,serif;font-weight:900;font-size:2.2rem;white-space:nowrap}
+.daily small{display:block;opacity:.75;font-size:.82rem}
+.menu-top{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:26px 0 20px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
 .tab{background:#ffffff12;border:1px solid #ffffff22;color:var(--sand);padding:9px 16px;border-radius:99px;cursor:pointer;font:500 .95rem Inter,sans-serif;transition:.2s}
 .tab:hover{background:#ffffff22}
 .tab.on{background:var(--amber);border-color:var(--amber);color:var(--pine)}
+.sw{display:flex;background:#ffffff12;border-radius:99px;padding:4px}
+.sw button{background:none;border:0;color:var(--sand);padding:7px 16px;border-radius:99px;cursor:pointer;font:600 .9rem Inter,sans-serif}
+.sw button.on{background:var(--lime);color:var(--pine)}
 .board{background:#16271f;border-radius:24px;padding:34px clamp(18px,4vw,44px);border:1px solid #ffffff14;
   background-image:radial-gradient(#ffffff08 1px,transparent 1px);background-size:16px 16px;box-shadow:inset 0 0 60px #0006}
 .cat{display:none}
 .cat.on{display:block;animation:fade .35s}
 @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
 .cat h3{font-family:Caveat,cursive;font-size:2.2rem;color:var(--amber);font-weight:600;margin-bottom:6px}
-.cat .hint{color:#e8dcc499;font-size:.92rem;margin:0 0 18px}
+.cat .hint{color:#e8dcc499;font-size:.92rem;margin:0 0 14px}
 .items{display:grid;grid-template-columns:repeat(2,1fr);gap:4px 42px}
 @media(max-width:700px){.items{grid-template-columns:1fr}}
 .item{padding:13px 0;border-bottom:1px dashed #ffffff22}
 .item .row{display:flex;align-items:baseline;gap:10px}
 .item .n{font-family:Fraunces,serif;font-size:1.12rem;font-weight:500}
-.item .fill{flex:1;border-bottom:2px dotted #ffffff26;transform:translateY(-4px)}
-.item .p{font-size:.85rem;color:#e8dcc4aa;white-space:nowrap}
+.item .fill{flex:1;border-bottom:2px dotted #ffffff26;transform:translateY(-4px);min-width:14px}
+.item .p{font-weight:600;color:var(--lime);white-space:nowrap;font-variant-numeric:tabular-nums}
 .item .d{color:#e8dcc4b3;font-size:.9rem}
-.tag{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
-.tag.src{background:#6f8f4e;color:#fff}
-.menu-note{margin-top:22px;display:flex;gap:12px;align-items:flex-start;background:#ffffff0d;border-radius:14px;padding:14px 18px;font-size:.92rem;color:#e8dcc4d0}
+.item .q{color:#e8dcc480;font-size:.82rem;font-weight:400;margin-left:4px;font-family:Inter,sans-serif}
+.star{color:#f5c542}
+.leaf{font-size:.9em}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px;font-size:.88rem;color:#e8dcc4c0}
+.menu-note{margin-top:18px;display:flex;gap:12px;align-items:flex-start;background:#ffffff0d;border-radius:14px;padding:14px 18px;font-size:.9rem;color:#e8dcc4d0}
 
-/* godziny */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px;margin-top:34px}
+.gallery figure{margin:0;position:relative;border-radius:16px;overflow:hidden;cursor:zoom-in}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:10px;bottom:10px;background:#0f241acc;color:var(--sand);font-size:.8rem;padding:3px 10px;border-radius:99px}
+.gallery .w2{grid-column:span 2}.gallery .h2{grid-row:span 2}
+@media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
+.lb{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:99;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:92vh;border-radius:12px}
+
+.reviews{display:grid;grid-template-columns:.7fr 1.3fr;gap:30px;margin-top:34px;align-items:start}
+@media(max-width:860px){.reviews{grid-template-columns:1fr}}
+.score{background:var(--forest);color:var(--sand);border-radius:24px;padding:30px;text-align:center}
+.score .num{font-family:Fraunces,serif;font-size:4.5rem;font-weight:900;line-height:1}
+.score .stars{color:#f5c542;font-size:1.6rem;letter-spacing:3px}
+.score span{opacity:.8;font-size:.92rem}
+.quotes{display:grid;gap:14px}
+.quote{background:var(--card);border-radius:18px;padding:18px 22px;box-shadow:0 12px 30px -22px #3a2a1a88;border-left:4px solid var(--amber)}
+.quote p{margin:0 0 6px;font-family:Fraunces,serif;font-size:1.08rem}
+.quote small{color:var(--muted)}
+
 .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
 @media(max-width:860px){.hours-grid{grid-template-columns:1fr}}
 .card{background:var(--card);border-radius:24px;padding:30px;box-shadow:0 20px 50px -30px #3a2a1a55}
-.card h3{color:var(--forest);font-size:1.5rem;margin-bottom:14px}
+.card h3{color:var(--forest);font-size:1.5rem;margin-bottom:4px}
+.card .meta{color:var(--muted);font-size:.85rem;margin-bottom:12px}
 table{width:100%;border-collapse:collapse}
-td{padding:10px 4px;border-bottom:1px solid var(--sand-2)}
+td{padding:9px 4px;border-bottom:1px solid var(--sand-2)}
 td:last-child{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
 tr.today td{color:var(--bark)}
 tr.today td:first-child::after{content:" · dziś";font-family:Caveat,cursive;font-size:1.2rem;color:var(--amber)}
-.season{display:flex;gap:14px;align-items:center;background:linear-gradient(135deg,#e08a2c22,#6f8f4e22);border-radius:16px;padding:16px;margin-top:18px}
-.season .big{font-size:2rem}
-.season-bar{height:10px;border-radius:99px;background:var(--sand-2);position:relative;margin:22px 0 6px}
-.season-bar .on{position:absolute;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,var(--moss),var(--amber))}
-.season-bar .now{position:absolute;top:-6px;width:3px;height:22px;background:var(--ink);border-radius:2px}
-.months{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted)}
+.muted-t td{color:var(--muted);font-weight:500}
 
-/* dojazd */
 #dojazd{background:var(--sand-2)}
 .loc{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;margin-top:34px}
 @media(max-width:860px){.loc{grid-template-columns:1fr}}
-.map{border-radius:24px;overflow:hidden;min-height:380px;box-shadow:0 20px 50px -30px #3a2a1a88}
-.map iframe{width:100%;height:100%;min-height:380px;border:0}
+.map{border-radius:24px;overflow:hidden;min-height:400px;box-shadow:0 20px 50px -30px #3a2a1a88;background:#dfe8d6}
+.map iframe{width:100%;height:100%;min-height:400px;border:0}
 .info-list{list-style:none;padding:0;margin:0}
-.info-list li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--sand-2)}
+.info-list li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--sand-2)}
 .info-list li:last-child{border:0}
 .info-list .ic{font-size:1.4rem;width:30px;flex:none}
 .info-list b{display:block;color:var(--forest)}
@@ -158,13 +179,15 @@ footer ul{margin:0;padding-left:18px}
 <nav id="nav">
   <div class="wrap">
     <a class="logo" href="#top">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 7 14h4l-6 8h7v6h8v-6h7l-6-8h4z" fill="#e08a2c"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 7 14h4l-6 8h7v6h8v-6h7l-6-8h4z" fill="#c8d64a"/></svg>
       Bar Leśny <small>2.0</small>
     </a>
     <button class="burger" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
     <ul id="links">
       <li><a href="#o-nas">O barze</a></li>
       <li><a href="#menu">Menu</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#opinie">Opinie</a></li>
       <li><a href="#godziny">Godziny</a></li>
       <li><a href="#dojazd">Dojazd</a></li>
     </ul>
@@ -173,71 +196,114 @@ footer ul{margin:0;padding-left:18px}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="status" id="status"><span class="dot" id="dot"></span><span id="statusTxt">Sprawdzam godziny…</span></div>
-    <div class="kicker">domowe obiady wśród sosen</div>
+    <div class="chips">
+      <span class="chip"><span class="dot" id="dot"></span><span id="statusTxt">Sprawdzam godziny…</span></span>
+      <span class="chip">★ <b>4,7</b> · 181 opinii Google</span>
+    </div>
+    <div class="kicker">kuchnia polska i regionalna</div>
     <h1>Bar <span>Leśny</span> 2.0</h1>
-    <p class="lead">Polska i regionalna kuchnia w sosnowym lesie na Campingu Morskim nr&nbsp;21 w Łebie — kilka minut spacerem od plaży.</p>
+    <p class="lead">Domowe obiady, ręcznie lepione pierogi i sandacz z sosem kurkowym — pod sosnami, przy wejściu na Camping Morski nr&nbsp;21 w Łebie.</p>
     <div class="btns">
-      <a class="btn primary" href="#menu">🍽️ Zobacz menu</a>
-      <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=54.76151,17.5385717" target="_blank" rel="noopener">📍 Prowadź do baru</a>
+      <a class="btn primary" href="#menu">🍽️ Menu i ceny</a>
+      <a class="btn ghost" href="tel:+48739200194">☎️ 739 200 194</a>
+      <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=54.76151,17.5385717" target="_blank" rel="noopener">📍 Prowadź</a>
     </div>
   </div>
-  <svg class="trees" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
-    <path fill="#f4ead7" d="M0 160 L0 120 L32 71 L64 120 L96 77 L138 120 L172 74 L211 120 L242 77 L282 120 L298 78 L326 120 L356 54 L391 120 L415 75 L444 120 L467 77 L502 120 L526 40 L555 120 L591 43 L631 120 L644 66 L667 120 L702 26 L741 120 L766 54 L797 120 L830 73 L869 120 L900 28 L939 120 L958 43 L983 120 L1009 74 L1042 120 L1054 44 L1078 120 L1115 67 L1156 120 L1184 53 L1223 120 L1250 43 L1286 120 L1308 61 L1341 120 L1361 36 L1388 120 L1405 44 L1429 120 L1459 49 L1497 120 L1440 120 L1440 160 Z"/>
-  </svg>
+  <svg class="trees" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true"><path id="treepath" fill="#f4ead7" d="M0 160 L1440 160Z"/></svg>
 </header>
 
 <section id="o-nas">
   <div class="wrap about">
     <div class="reveal">
       <div class="eyebrow">o barze</div>
-      <h2>Jak u mamy, tylko pod sosnami</h2>
-      <p class="sub">Bar Leśny 2.0 to sezonowa jadłodajnia przy ul. Turystycznej 3 — przy wejściu na Camping Morski nr&nbsp;21. Na szybie kredą: <em>„Obiady domowe · Polska kuchnia”</em>, w środku pomarańczowe lampy, a przed barem zadaszony taras w cieniu drzew. Przychodzą tu kempingowicze, rodziny wracające z plaży i wszyscy, którzy w Łebie szukają zwykłego, porządnego obiadu.</p>
+      <h2>Las, drewno i porządny obiad</h2>
+      <p class="sub">Bar Leśny 2.0 to odnowiony lokal przy ul. Turystycznej 3, tuż przy wejściu na Camping Morski nr&nbsp;21. W środku cegła, drewno i ciepłe żarówki, na zewnątrz taras z leżakami między sosnami. W karcie kuchnia polska i regionalna: rosół, żurek, kaszubska zupa rybna, ryby, pierogi i dania dnia. Zamówienia składa się przy barze, płacić można kartą lub gotówką.</p>
       <div class="feats">
-        <div class="feat"><div class="ic">🥟</div><b>Pierogi i obiady</b><span>kuchnia polska i regionalna</span></div>
-        <div class="feat"><div class="ic">🌲</div><b>Taras w lesie</b><span>stoliki pod zadaszeniem</span></div>
-        <div class="feat"><div class="ic">🏖️</div><b>Blisko morza</b><span>kilka minut do plaży</span></div>
-        <div class="feat"><div class="ic">🍦</div><b>Lody obok</b><span>lodziarnia i sklep na kempingu</span></div>
+        <div class="feat"><div class="ic">🥟</div><b>Ręcznie lepione pierogi</b><span>ruskie i z mięsem, ze złocistą cebulką</span></div>
+        <div class="feat"><div class="ic">🐟</div><b>Ryby</b><span>sandacz z kurkami, pieczony łosoś, zupa rybna</span></div>
+        <div class="feat"><div class="ic">🌲</div><b>Taras w lesie</b><span>leżaki i stoliki między sosnami</span></div>
+        <div class="feat"><div class="ic">🍹</div><b>Bar</b><span>piwo z beczki, lemoniady, Aperol, nalewki</span></div>
       </div>
     </div>
     <div class="photo-stack reveal">
-      <span class="note">tu jesteśmy!</span>
-      <img src="img/lokal.jpg" alt="Bar Leśny 2.0 z zewnątrz — biały pawilon z pomarańczowymi lampami, sosny w tle">
-      <img class="b" src="img/schabowy.jpg" alt="Kotlet schabowy z frytkami i surówką z kapusty">
+      <span class="note">zapraszamy!</span>
+      <img src="img/wnetrze.jpg" alt="Wnętrze Baru Leśnego — ceglany bar, drewniane półki, żarówki" loading="lazy">
+      <img class="b" src="img/pierogi.jpg" alt="Pierogi ze złocistą cebulką" loading="lazy">
     </div>
   </div>
 </section>
 
 <section id="menu">
   <div class="wrap">
-    <div class="eyebrow">karta</div>
+    <div class="eyebrow">karta · wrzesień 2026</div>
     <h2>Menu</h2>
-    <p class="sub">Domowa kuchnia bez udziwnień. Codziennie wypisujemy na tablicy dania dnia i zupę.</p>
-    <div class="tabs" id="tabs"></div>
+    <p class="sub">Ceny z aktualnej karty w lokalu. Zamówienia prosimy składać przy barze.</p>
+    <div class="daily">
+      <div class="big">39 zł</div>
+      <div><b>Danie dnia z zupą i kompotem</b> — od poniedziałku do piątku, codziennie inne.<small>według opinii gości (lipiec 2026) — zapytaj przy barze o dzisiejsze danie</small></div>
+    </div>
+    <div class="menu-top">
+      <div class="sw" id="sw"><button class="on" data-k="food">Kuchnia</button><button data-k="bar">Bar</button></div>
+      <div class="tabs" id="tabs"></div>
+    </div>
     <div class="board" id="board"></div>
-    <div class="menu-note">
-      <span>ℹ️</span>
-      <span>Bar nie publikuje karty z cenami w internecie. Pozycje oznaczone <span class="tag src">potwierdzone</span> wynikają ze źródeł (opis lokalu, zdjęcia gości); pozostałe to typowy zestaw domowych obiadów — aktualne dania i ceny są na tablicy w barze.</span>
+    <div class="legend"><span><span class="star">★</span> polecane</span><span><span class="leaf">🌿</span> wegetariańskie</span><span>Zapytaj obsługę o alergeny.</span></div>
+    <div class="menu-note"><span>ℹ️</span><span>Menu przepisane ze zdjęć karty dodanych przez gości w Google (kuchnia: wrzesień 2026, bar: sierpień/wrzesień 2026). Ceny mogą się zmienić — obowiązuje karta w lokalu. Pozycje skreślone w karcie zostały pominięte.</span></div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <div class="eyebrow">zdjęcia gości</div>
+    <h2>Galeria</h2>
+    <div class="gallery reveal" id="gal">
+      <figure class="h2"><img src="img/front.jpg" alt="Wejście do Baru Leśnego, taras z leżakami" loading="lazy"><figcaption>wejście i taras</figcaption></figure>
+      <figure class="w2"><img src="img/sandacz.jpg" alt="Sandacz z sosem kurkowym, pieczone ziemniaki, sałatka" loading="lazy"><figcaption>sandacz z sosem kurkowym</figcaption></figure>
+      <figure class="h2"><img src="img/halibut.jpg" alt="Pieczona ryba z ziemniakami i sałatką" loading="lazy"><figcaption>danie dnia: pieczony halibut</figcaption></figure>
+      <figure><img src="img/placki.jpg" alt="Placki po cygańsku z gulaszem" loading="lazy"><figcaption>placki po cygańsku</figcaption></figure>
+      <figure><img src="img/volaille.jpg" alt="Kotlet de volaille z frytkami i sałatką" loading="lazy"><figcaption>de volaille</figcaption></figure>
+      <figure class="w2"><img src="img/nalesniki.jpg" alt="Pancakes z owocami na tarasie" loading="lazy"><figcaption>pancakes z owocami</figcaption></figure>
+      <figure><img src="img/chlodnik.jpg" alt="Chłodnik" loading="lazy"><figcaption>chłodnik (sezonowo)</figcaption></figure>
+      <figure><img src="img/lokal.jpg" alt="Pawilon baru wieczorem" loading="lazy"><figcaption>wieczorem</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section id="godziny">
+<section id="opinie" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">co mówią goście</div>
+    <h2>Opinie</h2>
+    <div class="reviews">
+      <div class="score reveal">
+        <div class="num">4,7</div>
+        <div class="stars">★★★★★</div>
+        <span>181 opinii w Google Maps<br>(stan: 26.09.2026)</span>
+      </div>
+      <div class="quotes reveal">
+        <div class="quote"><p>„Sandacz fenomenalny, idealnie usmażony i świetnie doprawiony. Wątróbka również petarda.”</p><small>— gość, Google</small></div>
+        <div class="quote"><p>„Danie dnia za 39 zł z zupą… duża smaczna zupa, kompot z czerwonych porzeczek, halibut pieczony.”</p><small>— lokalny przewodnik Google</small></div>
+        <div class="quote"><p>„Ładny lokal, klimatyczny, miła i sympatyczna obsługa, duże porcje, smaczne jedzenie.”</p><small>— lokalny przewodnik Google · jedzenie 5 · obsługa 5 · klimat 5</small></div>
+        <div class="quote"><p>„Chłodnik był tak pyszny i orzeźwiający, że zastanawiałam się, czy nie zamówić drugiej porcji zamiast deseru.”</p><small>— gość, Google</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="godziny" style="background:var(--card)">
   <div class="wrap">
     <div class="eyebrow">kiedy</div>
     <h2>Godziny otwarcia</h2>
-    <p class="sub">Bar działa sezonowo — razem z częścią gastronomiczną kempingu, od połowy czerwca do połowy września.</p>
+    <p class="sub">Bar działa sezonowo, razem z Campingiem Morskim. Poza szczytem sezonu godziny się zmieniają — w razie wątpliwości zadzwoń: <a href="tel:+48739200194">739 200 194</a>.</p>
     <div class="hours-grid">
-      <div class="card reveal">
-        <h3>W sezonie</h3>
+      <div class="card reveal" style="background:var(--sand)">
+        <h3>Teraz</h3>
+        <div class="meta">wg Google Maps, stan na 26.09.2026</div>
         <table id="hours"></table>
       </div>
-      <div class="card reveal">
-        <h3>Sezon</h3>
-        <div class="season"><div class="big" id="seasonIc">☀️</div><div id="seasonTxt"></div></div>
-        <div class="season-bar" id="sbar"><div class="on"></div><div class="now"></div></div>
-        <div class="months"><span>sty</span><span>lut</span><span>mar</span><span>kwi</span><span>maj</span><span>cze</span><span>lip</span><span>sie</span><span>wrz</span><span>paź</span><span>lis</span><span>gru</span></div>
-        <p class="sub" style="margin-top:18px;font-size:.92rem">Camping i apartamenty są czynne dłużej niż bar. Poza sezonem warto zadzwonić do recepcji i zapytać.</p>
+      <div class="card reveal" style="background:var(--sand)">
+        <h3>W szczycie sezonu</h3>
+        <div class="meta">lipiec–sierpień 2026</div>
+        <table class="muted-t" id="hoursSummer"></table>
       </div>
     </div>
   </div>
@@ -246,15 +312,15 @@ footer ul{margin:0;padding-left:18px}
 <section id="dojazd">
   <div class="wrap">
     <div class="eyebrow">gdzie</div>
-    <h2>Dojazd</h2>
+    <h2>Dojazd i kontakt</h2>
     <div class="loc">
       <div class="card reveal">
         <ul class="info-list">
-          <li><span class="ic">📍</span><div><b>ul. Turystyczna 3, 84-360 Łeba</b><span>Camping Morski nr 21 — bar przy wejściu</span></div></li>
-          <li><span class="ic">🚶</span><div><b>Plaża</b><span>kilka minut spacerem przez las</span></div></li>
-          <li><span class="ic">🚆</span><div><b>Dworzec PKP / PKS</b><span>ok. 10 minut od kempingu</span></div></li>
-          <li><span class="ic">☎️</span><div><b><a href="tel:+48598661380">59 866 13 80</a></b><span>recepcja Campingu Morskiego 21</span></div></li>
-          <li><span class="ic">🌐</span><div><b><a href="https://campingmorski.pl/" target="_blank" rel="noopener">campingmorski.pl</a></b><span>strona kempingu</span></div></li>
+          <li><span class="ic">📍</span><div><b>ul. Turystyczna 3, 84-360 Łeba</b><span>przy wejściu na Camping Morski nr 21, obok Parkingu Wydmy Ruchome</span></div></li>
+          <li><span class="ic">☎️</span><div><b><a href="tel:+48739200194">+48 739 200 194</a></b><span>bar</span></div></li>
+          <li><span class="ic">📘</span><div><b>Facebook: BarLeśny2.0 · Instagram: @bar_leśny2.0</b><span>nazwy profili podane na karcie menu</span></div></li>
+          <li><span class="ic">💳</span><div><b>Karta i gotówka</b><span>zamówienia przy barze · na miejscu i na wynos</span></div></li>
+          <li><span class="ic">🚶</span><div><b>Plaża i wydmy</b><span>do plaży kilka minut przez las; stąd startuje się też w stronę Wydm Ruchomych</span></div></li>
         </ul>
         <div class="btns" style="margin-top:14px">
           <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=54.76151,17.5385717" target="_blank" rel="noopener">Nawiguj (Google Maps)</a>
@@ -270,100 +336,157 @@ footer ul{margin:0;padding-left:18px}
 <footer>
   <div class="wrap">
     <div>
-      <h4>Bar Leśny 2.0</h4>
-      ul. Turystyczna 3, 84-360 Łeba<br>
-      Nieoficjalna strona informacyjna. Dane zebrane z publicznych źródeł — stan na wrzesień 2026.
+      <h4>Bar Leśny 2.0 — Polska &amp; Regionalna kuchnia</h4>
+      ul. Turystyczna 3, 84-360 Łeba · <a href="tel:+48739200194">739 200 194</a><br><br>
+      Nieoficjalna strona informacyjna. Dane zebrane z publicznych źródeł — stan na 26 września 2026. Zdjęcia: goście lokalu w Google Maps.
     </div>
     <div>
       <h4>Źródła</h4>
       <ul>
-        <li><a href="https://gdziejemy.pl/restauracja/bar-lesny-20-polska-regionalna-kuchnia-leba" target="_blank" rel="noopener">GdzieJemy.pl</a> — godziny, kuchnia, zdjęcie lokalu (akt. 19.07.2026)</li>
-        <li><a href="https://restaurantguru.com/Bar-Lesny-Leba" target="_blank" rel="noopener">Restaurant Guru</a> — zdjęcie dania, opinie</li>
-        <li><a href="https://campingmorski.pl/" target="_blank" rel="noopener">Camping Morski 21</a> — sezon, kontakt, bar z domowymi obiadami</li>
+        <li><a href="https://www.google.com/maps/place/?q=place_id:0x46fe79001e2b710f:0x23c2e5679a8cde85" target="_blank" rel="noopener">Google Maps</a> — godziny, ocena, opinie, zdjęcia, karta menu</li>
+        <li><a href="https://pl.restaurantguru.com/Bar-Lesny-20-Polska-and-Regionalna-kuchnia-Leba/menu" target="_blank" rel="noopener">Restaurant Guru</a> — kopie zdjęć menu, telefon</li>
+        <li><a href="https://gdziejemy.pl/restauracja/bar-lesny-20-polska-regionalna-kuchnia-leba" target="_blank" rel="noopener">GdzieJemy.pl</a> — godziny w sezonie</li>
+        <li><a href="https://campingmorski.pl/" target="_blank" rel="noopener">Camping Morski 21</a> — sezon</li>
         <li>Mapa © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></li>
       </ul>
     </div>
   </div>
 </footer>
 
+<div class="lb" id="lb" onclick="this.classList.remove('on')"><img id="lbimg" alt=""></div>
+
 <script>
-// ---- MENU (edytuj tutaj; p: cena, src: potwierdzone w źródłach) ----
-const MENU = [
-  {id:'obiady', name:'Obiady domowe', hint:'podawane z ziemniakami lub frytkami i surówką', items:[
-    {n:'Kotlet schabowy', d:'z frytkami lub ziemniakami i surówką z kapusty', src:1},
-    {n:'Kotlet mielony', d:'z ziemniakami i buraczkami'},
-    {n:'Filet z kurczaka', d:'panierowany lub z grilla'},
-    {n:'Gołąbki w sosie pomidorowym', d:'z ziemniakami'},
-    {n:'Bitki wieprzowe w sosie', d:'z kaszą lub ziemniakami'},
-    {n:'Placki ziemniaczane', d:'ze śmietaną lub z gulaszem'},
+// ---- MENU (karta w lokalu; s: polecane, v: wegetariańskie, q: porcja) ----
+const MENU = {
+ food: [
+  {id:'glowne', name:'Dania główne', items:[
+    {n:'Leśna wątróbka szefa', q:'180 g', p:'47 zł', s:1, d:'karmelizowana cebula, jabłko, żurawina i suszona śliwka, podana z puree ziemniaczanym'},
+    {n:'Żeberka wieprzowe BBQ', q:'400 g', p:'64 zł', s:1, d:'powoli pieczone żeberka w sosie BBQ, pieczone ziemniaki, colesław'},
+    {n:'Sandacz z sosem kurkowym', q:'180 g', p:'59 zł', s:1, d:'smażony filet z sandacza, sos kurkowy, pieczone ziemniaki i sałatka sezonowa'},
+    {n:'Pieczony łosoś', q:'180 g', p:'67 zł', d:'pieczony filet z łososia, puree ziemniaczane i sałatka sezonowa'},
+    {n:'Kotlet de volaille', q:'180 g', p:'49 zł', d:'nadziewany masłem koperkowym, podawany z frytkami i sałatką sezonową'},
+    {n:'Kotlet schabowy', q:'180 g', p:'49 zł', d:'klasyczny schabowy, pieczone młode ziemniaki i kapusta zasmażana'},
+    {n:'Placki po cygańsku', q:'450 g', p:'47 zł', d:'placki ziemniaczane z gulaszem wieprzowym i śmietaną'},
+    {n:'Falafel', q:'150 g', p:'39 zł', v:1, d:'falafel podany z frytkami, sałatką i sosem ziołowym'},
+    {n:'Smażony ser', q:'120 g', p:'42 zł', v:1, d:'chrupiący panierowany ser, frytki, zestaw surówek i sos tatarski'},
   ]},
-  {id:'pierogi', name:'Pierogi', src:1, hint:'specjalność baru wg opisu lokalu — rodzaje zmieniają się', items:[
-    {n:'Pierogi ruskie', d:'z cebulką'},
-    {n:'Pierogi z mięsem', d:'ze skwarkami'},
-    {n:'Pierogi z kapustą i grzybami', d:''},
-    {n:'Pierogi z jagodami', d:'sezonowo, ze śmietaną i cukrem'},
+  {id:'maczne', name:'Pierogi i makarony', items:[
+    {n:'Pierogi ruskie', q:'7 szt.', p:'31 zł', v:1, d:'ręcznie lepione pierogi z twarogiem i ziemniakami, podawane ze złocistą cebulką'},
+    {n:'Pierogi z mięsem', q:'7 szt.', p:'31 zł', d:'ręcznie lepione pierogi z mięsem, podawane ze złocistą cebulką'},
+    {n:'Penne z łososiem i szpinakiem', q:'400 g', p:'49 zł', d:'łosoś, szpinak, kremowy sos śmietanowy i parmezan'},
   ]},
-  {id:'ryby', name:'Ryby', hint:'kuchnia regionalna — to w końcu Łeba', items:[
-    {n:'Dorsz smażony', d:'z frytkami i surówką'},
-    {n:'Filet z mintaja', d:'z frytkami i surówką'},
-    {n:'Śledź po kaszubsku', d:'z cebulką i pieczywem'},
+  {id:'zupy', name:'Zupy', items:[
+    {n:'Rosół', q:'300 ml', p:'22 zł', d:'domowy rosół z makaronem i marchewką'},
+    {n:'Żurek', q:'300 ml', p:'29 zł', d:'na naturalnym zakwasie z domową białą kiełbasą i jajkiem'},
+    {n:'Kaszubska zupa rybna', q:'300 ml', p:'31 zł', d:'aromatyczny wywar rybny z kawałkami ryb, warzywami i świeżym koperkiem'},
   ]},
-  {id:'zupy', name:'Zupy', hint:'zupa dnia — na tablicy', items:[
-    {n:'Pomidorowa', d:'z makaronem lub ryżem'},
-    {n:'Żurek', d:'z jajkiem i kiełbasą'},
-    {n:'Rosół', d:'z makaronem'},
-    {n:'Zupa dnia', d:'pytaj przy barze'},
+  {id:'dzieci', name:'Dla dzieci', items:[
+    {n:'Stripsy z kurczaka', q:'120 g', p:'35 zł', d:'chrupiące stripsy, frytki i surówka'},
+    {n:'Penne pomidorowe', q:'250 g', p:'23 zł', v:1, d:'łagodny sos pomidorowy i mini mozzarella'},
+    {n:'Mini pancakes z owocami', q:'3 szt.', p:'29 zł', d:'puszyste amerykańskie placuszki, bita śmietana i owoce'},
   ]},
-  {id:'dzieci', name:'Dla dzieci', hint:'mniejsze porcje', items:[
-    {n:'Nuggetsy z kurczaka', d:'z frytkami'},
-    {n:'Naleśniki', d:'z serem lub dżemem'},
-    {n:'Frytki', d:'porcja'},
+  {id:'desery', name:'Desery', items:[
+    {n:'Deser lodowy', p:'28 zł', d:'trzy gałki lodów, bita śmietana i sezonowe owoce'},
+    {n:'Szarlotka', p:'27 zł', d:'podawana na ciepło z lodami, bitą śmietaną i owocami'},
+    {n:'Ciasto dnia + kawa', p:'19 zł', d:'zapytaj obsługę o dzisiejszy wypiek'},
   ]},
-  {id:'napoje', name:'Napoje i desery', hint:'lody — w lodziarni obok', items:[
-    {n:'Kompot domowy', d:''},
-    {n:'Kawa / herbata', d:''},
-    {n:'Napoje zimne', d:'woda, soki, napoje gazowane'},
-    {n:'Piwo', d:'butelkowe'},
-    {n:'Ciasto domowe', d:'według dostępności'},
+ ],
+ bar: [
+  {id:'zimne', name:'Napoje zimne', items:[
+    {n:'Coca-Cola / Coca-Cola Zero', q:'0,25 l', p:'10 zł'},
+    {n:'Sprite / Fanta', q:'0,25 l', p:'10 zł'},
+    {n:'Sok Cappy', q:'0,25 l', p:'10 zł'},
+    {n:'Tonic Kinley', q:'0,25 l', p:'12 zł'},
+    {n:'Woda', q:'0,33 l', p:'8 zł', d:'gazowana lub niegazowana'},
+    {n:'Dzbanek wody', q:'1,3 l', p:'12 zł', d:'gazowana lub niegazowana'},
+    {n:'Monster Energy', q:'0,5 l', p:'15 zł'},
   ]},
-];
+  {id:'lemoniady', name:'Lemoniady domowe', items:[
+    {n:'Malina · cytryna · mięta', q:'0,3 l / 1,3 l', p:'16 / 39 zł'},
+    {n:'Cytrusowa', q:'0,3 l / 1,3 l', p:'16 / 39 zł'},
+  ]},
+  {id:'kawa', name:'Kawa i herbata', items:[
+    {n:'Espresso', p:'8 zł'}, {n:'Espresso doppio', p:'11 zł'}, {n:'Americano', p:'10 zł'},
+    {n:'Kawa z mlekiem', p:'12 zł'}, {n:'Cappuccino', p:'14 zł'}, {n:'Espresso tonic', p:'18 zł'},
+    {n:'Dodatkowe espresso', p:'5 zł'}, {n:'Herbata', p:'8 zł'}, {n:'Gorąca czekolada', p:'12 zł'},
+  ]},
+  {id:'piwo', name:'Piwo', items:[
+    {n:'Amber Złote Lwy (beczka)', q:'0,3 / 0,5 l', p:'14 / 18 zł'},
+    {n:'Amber Pszeniczniak (beczka)', q:'0,3 / 0,5 l', p:'15 / 19 zł'},
+    {n:'Sok do piwa', p:'2 zł', d:'malinowy lub imbirowy'},
+    {n:'Amber Żywe', q:'0,5 l', p:'18 zł'},
+    {n:'Amber Koźlak', q:'0,5 l', p:'19 zł'},
+    {n:'Amber Johannes', q:'0,5 l', p:'19 zł'},
+    {n:'Amber Piwo Smakowe', q:'0,5 l', p:'19 zł'},
+    {n:'Amber IPA Zero', q:'0,5 l', p:'18 zł', d:'bezalkoholowe'},
+    {n:'Amber Zanzi Zero', q:'0,5 l', p:'18 zł', d:'bezalkoholowe'},
+    {n:'Amber Czarny Bez Zero', q:'0,5 l', p:'18 zł', d:'bezalkoholowe'},
+    {n:'Żywiec Zero', q:'0,5 l', p:'18 zł', d:'bezalkoholowe'},
+  ]},
+  {id:'koktajle', name:'Koktajle i wino', items:[
+    {n:'Aperol Spritz', p:'29 zł', s:1, d:'150 ml Prosecco, 40 ml Aperol, woda gazowana, pomarańcza'},
+    {n:'Hugo', p:'29 zł', s:1, d:'100 ml Prosecco, 25 ml syrop z czarnego bzu, woda gazowana, limonka, mięta'},
+    {n:'Cuba Libre', p:'29 zł', d:'40 ml rum, cola, limonka'},
+    {n:'Gin & Tonic', p:'29 zł', d:'40 ml gin, tonic, cytryna'},
+    {n:'Flower G&T', p:'32 zł', d:'40 ml gin, tonic bitter rose, świeże cytrusy, rozmaryn'},
+    {n:'Negroni', p:'32 zł', d:'20 ml gin, 20 ml vermouth, 20 ml Campari'},
+    {n:'Sangria', q:'150 ml / 1,3 l', p:'23 / 69 zł', s:1},
+    {n:'Wino białe / różowe / czerwone', q:'150 / 750 ml', p:'16 / 79 zł'},
+    {n:'Prosecco', q:'150 / 750 ml', p:'21 / 95 zł'},
+  ]},
+  {id:'mocne', name:'Nalewki i mocne', items:[
+    {n:'Nalewka Stary Sad', q:'40 ml', p:'13 zł', d:'pieczone jabłko, żubrówka i dym jabłoni'},
+    {n:'Nalewka Cytrusówka', q:'40 ml', p:'13 zł', d:'cytryna, pomarańcza i grejpfrut'},
+    {n:'Ballantine\'s', q:'40 ml', p:'15 zł'}, {n:'Jameson', q:'40 ml', p:'18 zł'}, {n:'Jack Daniel\'s', q:'40 ml', p:'20 zł'},
+    {n:'Jägermeister', q:'40 ml', p:'15 zł'}, {n:'Żubrówka Czarna', q:'40 ml', p:'15 zł'}, {n:'Żubrówka Biała / Bison Grass', q:'40 ml', p:'12 zł'},
+    {n:'Soplica smakowa', q:'40 ml', p:'9 zł'}, {n:'Tequila Silver', q:'40 ml', p:'20 zł'}, {n:'Tequila Gold', q:'40 ml', p:'22 zł'},
+  ]},
+ ]
+};
 
 const tabs=document.getElementById('tabs'), board=document.getElementById('board');
-MENU.forEach((c,i)=>{
-  const b=document.createElement('button'); b.className='tab'+(i?'':' on'); b.textContent=c.name; b.dataset.id=c.id;
-  b.onclick=()=>{document.querySelectorAll('.tab,.cat').forEach(e=>e.classList.toggle('on',e.dataset.id===c.id))};
-  tabs.appendChild(b);
-  const d=document.createElement('div'); d.className='cat'+(i?'':' on'); d.dataset.id=c.id;
-  d.innerHTML=`<h3>${c.name}${c.src?' <span class="tag src">potwierdzone</span>':''}</h3><p class="hint">${c.hint}</p><div class="items">`+c.items.map(it=>
-    `<div class="item"><div class="row"><span class="n">${it.n}${it.src?'<span class="tag src">potwierdzone</span>':''}</span><span class="fill"></span><span class="p">${it.p||'cena w barze'}</span></div>${it.d?`<div class="d">${it.d}</div>`:''}</div>`).join('')+'</div>';
-  board.appendChild(d);
-});
+function renderMenu(k){
+  tabs.innerHTML=''; board.innerHTML='';
+  MENU[k].forEach((c,i)=>{
+    const b=document.createElement('button'); b.className='tab'+(i?'':' on'); b.textContent=c.name; b.dataset.id=c.id;
+    b.onclick=()=>document.querySelectorAll('.tab,.cat').forEach(e=>e.classList.toggle('on',e.dataset.id===c.id));
+    tabs.appendChild(b);
+    const d=document.createElement('div'); d.className='cat'+(i?'':' on'); d.dataset.id=c.id;
+    d.innerHTML=`<h3>${c.name}</h3><div class="items">`+c.items.map(it=>
+      `<div class="item"><div class="row"><span class="n">${it.s?'<span class="star">★</span> ':''}${it.n}${it.v?' <span class="leaf">🌿</span>':''}${it.q?`<span class="q">${it.q}</span>`:''}</span><span class="fill"></span><span class="p">${it.p}</span></div>${it.d?`<div class="d">${it.d}</div>`:''}</div>`).join('')+'</div>';
+    board.appendChild(d);
+  });
+}
+renderMenu('food');
+document.querySelectorAll('#sw button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#sw button').forEach(x=>x.classList.toggle('on',x===b)); renderMenu(b.dataset.k);});
 
-// ---- GODZINY + SEZON ----
+// ---- GODZINY ----
 const DAYS=['Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota','Niedziela'];
-const HRS=[[12,20],[12,20],[12,20],[12,20],[12,21],[12,21],[12,20]];
-const SEASON_FROM=[6,15], SEASON_TO=[9,15]; // [miesiąc, dzień]
+const NOW_HRS=[[14,20],[14,20],[14,20],[14,20],[14,20],[14,20],[14,20]];   // Google Maps, 26.09.2026
+const SUMMER=[[12,20],[12,20],[12,20],[12,20],[12,21],[12,21],[12,20]];
 const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Warsaw'}));
 const wd=(now.getDay()+6)%7;
-document.getElementById('hours').innerHTML=DAYS.map((d,i)=>`<tr class="${i===wd?'today':''}"><td>${d}</td><td>${HRS[i][0]}:00 – ${HRS[i][1]}:00</td></tr>`).join('');
-const md=(now.getMonth()+1)*100+now.getDate();
-const inSeason=md>=SEASON_FROM[0]*100+SEASON_FROM[1] && md<=SEASON_TO[0]*100+SEASON_TO[1];
-const h=now.getHours()+now.getMinutes()/60, [o,c]=HRS[wd];
+const rows=(H,hl)=>DAYS.map((d,i)=>`<tr class="${hl&&i===wd?'today':''}"><td>${d}</td><td>${H[i][0]}:00 – ${H[i][1]}:00</td></tr>`).join('');
+document.getElementById('hours').innerHTML=rows(NOW_HRS,true);
+document.getElementById('hoursSummer').innerHTML=rows(SUMMER,false);
+const h=now.getHours()+now.getMinutes()/60, [o,c]=NOW_HRS[wd];
 const dot=document.getElementById('dot'), st=document.getElementById('statusTxt');
-if(!inSeason){dot.className='dot off'; st.textContent= md>SEASON_TO[0]*100+SEASON_TO[1] ? 'Po sezonie — do zobaczenia w czerwcu!' : 'Przed sezonem — otwieramy w połowie czerwca';}
-else if(h>=o&&h<c){dot.className='dot open'; st.textContent=`Otwarte teraz · do ${c}:00`;}
-else{dot.className='dot closed'; st.textContent= h<o?`Zamknięte · otwieramy o ${o}:00`:'Zamknięte · zapraszamy jutro od 12:00';}
-document.getElementById('seasonIc').textContent=inSeason?'☀️':'🍂';
-document.getElementById('seasonTxt').innerHTML=`<b>od połowy czerwca do połowy września</b><br><span style="color:var(--muted)">${inSeason?'Trwa sezon — zapraszamy!':'Teraz poza sezonem baru.'}</span>`;
-const pos=(m,d)=>((m-1)+(d-1)/31)/12*100;
-const bar=document.querySelector('#sbar .on'); bar.style.left=pos(...SEASON_FROM)+'%'; bar.style.width=(pos(...SEASON_TO)-pos(...SEASON_FROM))+'%';
-document.querySelector('#sbar .now').style.left=pos(now.getMonth()+1,now.getDate())+'%';
+if(h>=o&&h<c){dot.className='dot open'; st.textContent=`Otwarte · do ${c}:00`;}
+else{dot.className='dot closed'; const [no]=NOW_HRS[(wd+(h>=c?1:0))%7]; st.textContent=h<o?`Zamknięte · otwarcie o ${o}:00`:`Zamknięte · jutro od ${no}:00`;}
+
+// ---- las w hero ----
+(()=>{let x=0,d='M0 160 L0 120',s=7;const r=(a,b)=>{s=(s*9301+49297)%233280;return a+Math.floor(s/233280*(b-a+1))};
+ while(x<1440){const w=r(22,42),hh=r(40,95);d+=` L${x+w} ${120-hh} L${x+2*w} 120`;x+=2*w-r(4,12);}
+ document.getElementById('treepath').setAttribute('d',d+' L1440 120 L1440 160 Z');})();
+
+// ---- galeria lightbox ----
+document.querySelectorAll('#gal img').forEach(i=>i.onclick=()=>{document.getElementById('lbimg').src=i.src;document.getElementById('lb').classList.add('on')});
 
 // ---- nav + reveal ----
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>40),{passive:true});
 document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>document.getElementById('links').classList.remove('open'));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 </script>
 </body>
